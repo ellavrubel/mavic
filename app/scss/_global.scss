@@ -57,13 +57,13 @@ body{
 }
 
 .page-section{
-  min-height: 100vh;
+
   background-image: url('../images/page-bg.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding: 74px 0 50px;
+
 
   &::before{
     content: '';
@@ -77,7 +77,11 @@ body{
   }
 
   &__wrapper{
-      z-index: 1;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    padding: 74px 0 50px;
+
   }
 }
 
@@ -85,7 +89,7 @@ body{
   font-size: 44px;
   line-height: 53px;
   @extend %sf-regular;
-  padding-left: 25px;
+  padding: 120px 0 0 25px;
   margin-bottom: 55px;
 }
 
