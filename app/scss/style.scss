@@ -207,9 +207,124 @@
 
   }
 }
-
   .slider-btnLeft{
     right: 60px;
+  }
+
+
+//   benefits
+
+  .benefits{
+
+    &__items{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item{
+      display: flex;
+      align-items: flex-end;
+      margin-left: 30px;
+
+      &:nth-child(1),
+      &:nth-child(2){
+        margin-bottom: 105px;
+      }
+
+      &:nth-child(even){
+        margin-left: 40px;
+        transform: translateY(25px);
+      }
+
+    }
+
+    &__item-1,
+    &__item-3{
+      position: relative;
+
+      &::before,
+      &::after{
+        content: '';
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: 0 0 ;
+        background-size: cover;
+
+      }
+    }
+
+    &__item-1{
+
+      &::before{
+        top: 29px;
+        right: -61px;
+        height: 45px;
+        width: 245px;
+        background-image: url('../images/line-1.svg');
+      }
+
+    }
+
+    &__item-3{
+
+      &::before{
+        top: -79px;
+        right: -61px;
+        height: 62px;
+        width: 463px;
+        background-image: url('../images/line-2.svg');
+
+      }
+
+      &::after{
+        height: 39px;
+        width: 254px;
+        background-image: url('../images/line-3.svg');
+        top: 52px;
+        right: -61px;
+      }
+
+    }
+
+    &__item-num{
+      font-size: 36px;
+      line-height: 41px;
+      @extend %ubuntu-bold;
+      margin-right: 8px;
+    }
+
+    &__item-img{
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        border: 2px solid #FFFFFF;
+        width: 195px;
+        height: 130px;
+        z-index: -5;
+      }
+    }
+
+    &__item-info{
+      margin-left: 32px;
+    }
+
+    &__info-title{
+      @extend %ubuntu-bold;
+      font-size: 21px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      max-width: 123px;
+    }
+    &__info-text{
+      max-width: 300px;
+
+    }
+
+
+
   }
 
 
@@ -224,4 +339,4 @@
 
 
 
-@import "media";
+  @import "media";
