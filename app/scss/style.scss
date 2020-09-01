@@ -414,25 +414,81 @@
     }
   }
 
-  .questions{
+  .questions {
 
-    &__items{
+    &__items {
       max-width: 757px;
+      position: relative;
     }
 
-    &__item{
-      padding: 20px 211px 24px 39px;
+    &__item {
+      max-width: 690px;
       background: rgba(0, 0, 0, 0.3);
-      opacity: 0.95;
+      margin-bottom: 5px;
+      position: relative;
+
+      &:nth-child(3)::before{
+        content: '';
+        position: absolute;
+        width: 319px;
+        height: 125px;
+        top: -8px;
+        right: -386px;
+        background-image: url("../images/half-mavic.png");
+      }
     }
 
-    &__item-title{
+    &__item-title {
       @extend %ubuntu-medium;
+      padding: 20px 20px 24px 40px;
       font-size: 21px;
       line-height: 28px;
-      margin-bottom: 20px;
-      //color: rgba(255, 255, 255 .8);
+      color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      cursor: pointer;
+
+      &::after {
+        content: url(../images/arrow-down_2.svg);
+        position: absolute;
+        right: -67px;
+        top: 0;
+        width: 67px;
+        height: 72px;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
     }
+
+    &__item-text {
+      padding: 0 0 0 50px;
+      overflow: hidden;
+      height: 0;
+      transition: all ease-in-out .8s;
+    }
+
+    &__item.questions__item--active {
+
+      .questions__item-title::after{
+        transform: rotate(180deg);
+      }
+
+      .questions__item-text {
+        overflow: visible;
+        height: auto;
+        padding: 0 0 55px 50px;
+      }
+    }
+
+    //&__img{
+    //  position: absolute;
+    //  bottom: 26px;
+    //  right: -319px;
+    //}
+
+
   }
 
 
