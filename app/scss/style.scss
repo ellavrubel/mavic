@@ -403,8 +403,6 @@
           top: -71px;
           right: 303px;
         }
-
-
       }
 
 
@@ -414,11 +412,27 @@
       line-height: 28px;
       margin-bottom: 10px;
     }
+  }
 
-    &__box-text{
+  .questions{
 
+    &__items{
+      max-width: 757px;
     }
 
+    &__item{
+      padding: 20px 211px 24px 39px;
+      background: rgba(0, 0, 0, 0.3);
+      opacity: 0.95;
+    }
+
+    &__item-title{
+      @extend %ubuntu-medium;
+      font-size: 21px;
+      line-height: 28px;
+      margin-bottom: 20px;
+      //color: rgba(255, 255, 255 .8);
+    }
   }
 
 
