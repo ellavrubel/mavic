@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>mavic</title>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -62,7 +62,9 @@
     </div>
 </header>
 
-<section class="page-section top">
+<main id="fullpage">
+
+<section class="section page-section top">
     <div class="page-section__wrapper top__wrapper">
         <div class="container top__container">
             <div class="top__inner">
@@ -112,7 +114,7 @@
     </div>
 </section>
 
-<section id="products" class="page-section products">
+<section id="products" class="section page-section products">
     <div class="page-section__wrapper">
         <div class="container">
 
@@ -183,7 +185,7 @@
     </div>
 </section>
 
-<section id="benefits" class="page-section benefits">
+<section id="benefits" class="section page-section benefits">
     <div class="page-section__wrapper">
         <div class="container">
             <h3 class="title">
@@ -294,7 +296,7 @@
     </div>
 </section>
 
-<section id="specification" class="page-section specification">
+<section id="specification" class="section page-section specification">
     <div class="page-section__wrapper">
         <div class="container">
 
@@ -369,7 +371,7 @@
     </div>
 </section>
 
-<section id="questions" class="page-section questions">
+<section id="questions" class="section page-section questions">
     <div class="page-section__wrapper">
         <div class="container">
 
@@ -422,12 +424,6 @@
                     </p>
                 </div>
 
-
-
-<!--            <div class="questions__img">-->
-<!--                <img src="images/mavic-half.png" alt="">-->
-<!--            </div>-->
-
             </div>
 
         </div>
@@ -440,7 +436,7 @@
     </div>
 </section>
 
-<section id="contacts" class="page-section contacts">
+<section id="contacts" class="section page-section contacts">
     <div class="page-section__wrapper">
         <div class="container">
             <h3 class="title">
@@ -502,9 +498,7 @@
                         <input class="contacts__form-input" placeholder="Ваше e-mail" type="email">
                     </div>
 
-                    <textarea class="contacts__form-textarea" placeholder="Что вас интересует?">
-
-          </textarea>
+                    <textarea class="contacts__form-textarea" placeholder="Что вас интересует?"></textarea>
 
                     <button class="contacts__form-btn" type="submit">
                         ОТПРАВИТЬ
@@ -539,19 +533,23 @@
                 </div>
 
             </div>
+            <footer class="footer">
+
+                <div class="container">
+
+                    <p class="footer__text">
+                        © DJI, 2020
+                    </p>
+                </div>
+
+            </footer>
         </div>
     </div>
 </section>
 
-<footer class="footer">
+</main>
 
-    <div class="container">
-        <p class="footer__text">
-            © DJI, 2020
-        </p>
-    </div>
 
-</footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -16,6 +16,8 @@ $(function(){
 
     });
 
+    //  questions аккардион
+
     $('.questions__item-title').on('click',function (){
 
         $('.questions__item').removeClass('questions__item--active');
@@ -24,6 +26,15 @@ $(function(){
         $(this).parent().addClass('questions__item--active');
 
 });
+
+
+//    fullPage
+
+    $('#fullpage').fullpage({
+        autoScrolling:true,
+        scrollHorizontally: true,
+        sectionSelector: '.section'
+    });
 
 
 
