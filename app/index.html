@@ -12,40 +12,58 @@
 
 <header class="header">
     <div class="container">
-        <div class="header__inner">
+        <div id="menu__list" class="header__inner">
 
-            <a class="logo" href="#">
-                <picture class="logo__img">
-                    <source srcset="images/logo-mobile.svg" media="(max-width:640px)">
-                    <img src="images/logo.png" alt="">
-                </picture>
-            </a>
+            <div class="header__logo-wrapper" data-menuanchor="top">
+                <a class="logo" href="#top">
+                    <picture class="logo__img">
+                        <source srcset="images/logo-mobile.svg" media="(max-width:640px)">
+                        <img src="images/logo.png" alt="">
+                    </picture>
+                </a>
+            </div>
 
             <nav class="menu">
+
+<!--                mobile menu button             -->
+
+                <button class="menu__btn">
+                    <span class="menu__btn-line">
+
+                    </span>
+                </button>
+
+
+
                 <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a class="menu__list-link">
+                    <li class="menu__list-item" data-menuanchor="products">
+                        <a class="menu__list-link" href="#products">
                             О ДРОНЕ
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link">
+                    <li class="menu__list-item" data-menuanchor="benefits">
+                        <a class="menu__list-link" href="#benefits">
                             ПРЕИМУЩЕСТВА
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link">
+                    <li class="menu__list-item" data-menuanchor="specification">
+                        <a class="menu__list-link" href="#specification">
                             ХАРАКТЕРИСТИКИ
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link">
+                    <li class="menu__list-item" data-menuanchor="questions">
+                        <a class="menu__list-link" href="#questions">
                             ВОПРОСЫ
                         </a>
                     </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link">
+                    <li class="menu__list-item" data-menuanchor="contacts">
+                        <a class="menu__list-link" href="#contacts">
                             КОНТАКТЫ
+                        </a>
+                    </li>
+                    <li class="menu__list-phone">
+                        <a class="header__phone" href="tel:80505676767">
+                            +7 (050) 567 67 67
                         </a>
                     </li>
                 </ul>
@@ -54,7 +72,7 @@
             <div class="header__info">
                 <button class="header__btn">КУПИТЬ</button>
                 <a class="header__phone" href="tel:80505676767">
-                    8 (050) 567 67 67
+                    +7 (050) 567 67 67
                 </a>
             </div>
 
@@ -64,7 +82,7 @@
 
 <main id="fullpage">
 
-<section class="section page-section top">
+<section data-anchor="top" class="section page-section top">
     <div class="page-section__wrapper top__wrapper">
         <div class="container top__container">
             <div class="top__inner">
@@ -114,7 +132,7 @@
     </div>
 </section>
 
-<section id="products" class="section page-section products">
+<section data-anchor="products" class="section page-section products">
     <div class="page-section__wrapper">
         <div class="container">
 
@@ -185,7 +203,7 @@
     </div>
 </section>
 
-<section id="benefits" class="section page-section benefits">
+<section data-anchor="benefits" class="section page-section benefits">
     <div class="page-section__wrapper">
         <div class="container">
             <h3 class="title">
@@ -296,7 +314,7 @@
     </div>
 </section>
 
-<section id="specification" class="section page-section specification">
+<section data-anchor="specification" class="section page-section specification">
     <div class="page-section__wrapper">
         <div class="container">
 
@@ -371,7 +389,7 @@
     </div>
 </section>
 
-<section id="questions" class="section page-section questions">
+<section data-anchor="questions" class="section page-section questions">
     <div class="page-section__wrapper">
         <div class="container">
 
@@ -436,7 +454,7 @@
     </div>
 </section>
 
-<section id="contacts" class="section page-section contacts">
+<section data-anchor="contacts" class="section page-section contacts">
     <div class="page-section__wrapper">
         <div class="container">
             <h3 class="title">
@@ -450,7 +468,7 @@
                             Киев
                         </p>
                         <a class="contacts__info-phone" href="#">
-                            +8 (050) 567– 67 – 67
+                            +7 (050) 567– 67 – 67
                         </a>
                         <a class="contacts__info-email" href="#">
                             dgi.mavic2pro.kiev@mail.ru

@@ -25,16 +25,34 @@ $(function(){
 
         $(this).parent().addClass('questions__item--active');
 
-});
+    });
 
 
-//    fullPage
+    //    fullPage
 
     $('#fullpage').fullpage({
         autoScrolling:true,
         scrollHorizontally: true,
-        sectionSelector: '.section'
+        sectionSelector: '.section',
+        scrollOverflow: true,
+        anchors: ['top', 'products', 'benefits', 'specification', 'questions', 'contacts'],
+        menu: '#menu__list',
     });
+
+    //
+
+
+    //  mobile menu
+
+
+    $('.menu__btn').on('click', function () {
+
+        $(this).toggleClass('menu__btn--active');
+
+    });
+
+
+    //
 
 
 
