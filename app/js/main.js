@@ -12,7 +12,17 @@ $(function(){
             '<svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
             '<path d="M0.78161 17L9 9L0.78161 1"/>\n' +
             '</svg>' +
-            '</button>'
+            '</button>',
+
+        responsive: [
+            {
+                breakpoint: 630,
+                settings: {
+
+                    arrows: false
+                }
+            }
+        ]
 
     });
 
