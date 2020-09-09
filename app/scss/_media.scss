@@ -4,8 +4,8 @@
       padding: 36px 0 0 25px;
     }
 
-    .header{
-      background: rgba(0,0,0, .3);
+    .header {
+      background: rgba(0, 0, 0, .3);
       padding: 15px 0;
       top: 0;
     }
@@ -64,7 +64,7 @@
           }
         }
 
-        &:nth-child(4){
+        &:nth-child(4) {
           margin-left: 20px;
         }
       }
@@ -73,7 +73,18 @@
         padding: 13px 0;
       }
     }
+
+    .specification {
+      .title {
+        padding: 11px 0 0 25px;
+        margin-bottom: 3px;
+      }
+
+
+    }
   }
+
+
 
   @media (max-width: 1225px){
 
@@ -130,7 +141,36 @@
       }
     }
 
+    .specification{
+      &__img{
+        width: 40%;
+      }
+    }
+
   }
+
+  @media (max-width: 1200px) {
+
+    .specification {
+      &__box-3 {
+        &::before {
+          width: 310px;
+          top: -55px;
+          right: -237px;
+        }
+      }
+
+      &__box-4 {
+        &::before {
+          top: -57px;
+          transform: rotateX(45deg);
+        }
+      }
+
+
+    }
+  }
+
 
   @media (max-width: 1100px){
 
@@ -255,6 +295,20 @@
 
     }
 
+    .specification{
+      &__box-1:before,
+      &__box-2:before,
+      &__box-3:before,
+      &__box-4:before {
+
+        display: none;
+      }
+      &__img{
+
+          width: 30%;
+      }
+
+    }
   }
 
   @media (max-width: 1024px){
@@ -372,8 +426,32 @@
       }
 
     }
+    .specification{
+      &__box{
+        &:nth-child(odd){
+          margin-left: 15px;
+        }
+
+      }
+      &__item{
+        &:first-child{
+          margin-bottom: 30px;
+        }
+      }
+    }
+
   }
 
+
+  @media (max-width: 800px) {
+    .specification{
+      &__item{
+        &:nth-child(2){
+          display: none;
+        }
+      }
+    }
+  }
 
   @media (max-width: 720px){
 
@@ -465,6 +543,31 @@
       &__item-num{
         display: none;
       }
+    }
+
+    .specification{
+      &__item{
+        flex-wrap: wrap;
+      }
+
+      &__box{
+        max-width: 100%;
+
+        &:nth-child(odd){
+          margin-left: 0;
+        }
+      }
+
+      &__box-4{
+        transform: translateY(0);
+      }
+
+      &__box-3,
+      &__box-4{
+        margin-bottom: 30px;
+      }
+
+
     }
 
 
