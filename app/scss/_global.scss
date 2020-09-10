@@ -91,6 +91,41 @@ body{
   @extend %sf-regular;
   padding: 120px 0 0 25px;
   margin-bottom: 55px;
+
+  animation: title;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+
+  @keyframes title {
+
+    0%{
+      opacity: 0;
+    }
+    25%{
+      opacity: .25;
+
+    }
+
+    50%{
+      opacity: .5;
+
+    }
+
+
+    75%{
+      opacity: .75;
+
+    }
+
+    100%{
+      opacity: 1;
+
+    }
+
+  }
+
+
+
 }
 
 .scroll__btn{
