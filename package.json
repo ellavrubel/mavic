@@ -9,6 +9,7 @@
   "author": "Ella Vrubel",
   "license": "ISC",
   "devDependencies": {
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.26.5",
     "del": "^5.0.0",
     "fullpage.js": "^3.0.9",
@@ -18,7 +19,8 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "wowjs": "^1.1.3"
   },
   "dependencies": {
     "slick-carousel": "^1.8.1"

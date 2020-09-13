@@ -10,7 +10,7 @@ let gulp = require('gulp'),
 
 gulp.task('clean', async function(){
   del.sync('dist')
-})
+});
 
 gulp.task('scss', function(){
   return gulp.src('app/scss/**/*.scss')
@@ -27,7 +27,8 @@ gulp.task('css', function(){
   return gulp.src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.css',
-    'node_modules/fullpage.js/dist/fullpage.css'
+    'node_modules/fullpage.js/dist/fullpage.css',
+    'node_modules/animate.css/animate.css'
   ])
     .pipe(concat('_libs.scss'))
     .pipe(gulp.dest('app/scss'))
