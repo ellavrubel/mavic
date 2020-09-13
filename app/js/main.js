@@ -73,6 +73,17 @@ $(function(){
     //
 
 
+//    animation
+
+
+    wow = new WOW(
+        {
+        }
+    );
+
+    wow.init();
+
+
 
 
 
